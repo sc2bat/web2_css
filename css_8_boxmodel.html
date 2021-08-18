@@ -1,0 +1,58 @@
+<!-- 8 box model -->
+<!-- 각 h들을 나눠서 표 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /*
+      block level element
+      */
+      /* h1{ */
+        /* border-width:5px; */
+        /* border-color:blue; */
+        /* h1 태그는 전체를 사용한다 */
+        /* border-style: solid; */
+        /* display를 통해 inline화 가능 */
+        /* display:inline; */
+        /* 안보이게 */
+        /* display:none; */
+      /*}*/
+      /*
+      inline element
+      */
+      /* a{ */
+        /* border-width:5px; */
+        /* border-color:red; */
+        /* a 는 자신의 부피만큼만 */
+        /* border-style: solid; */
+        /* display:block; */
+      /* } */
+      /*중복 제거*/
+      /* h1, a{
+        border-width:5px;
+        border-color:red;
+        border-style: solid;
+      } */
+      /*중복 제거 2 */
+      /*순서는 관계없음*/
+      h1, a{
+        border:5px red solid;
+        /* 간격생성 */
+        padding:20px;
+        margin:0;
+        /* display: 의 값이 생략되어있음 */
+        width:100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <h1>CSS</h1>
+    <!-- margin, border, padding, content -->
+    <img src="boxmodel.png" width="50%">
+    <p>Cascading Style Sheets (<a href="https://en.wikipedia.org/wiki/CSS">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+      </p>
+  </body>
+</html>

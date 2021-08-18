@@ -1,0 +1,36 @@
+<!-- grid 그리드 -->
+<!-- https://caniuse.com/ciu/comparison -->
+<!-- html css JavaScript 통계를 보여주는 site -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+      #grid{
+      border:5px solid pink;
+      display: grid;
+      /* 첫번째는 150px 두번째는 그 외 나머지를 사용 */
+      /* fr 을 통해 간격을 나눌 수 있다 */
+      grid-template-columns: 150px 1fr;
+    }
+    /* 부피 */
+      div{
+        border:5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 디자인 목적을 위해 아무의미없는 무색무취 division <div> -->
+    <!-- div 기본적으로 block level element 이기에 화면전체를 쓰며 줄바꿈이됨 -->
+    <!-- span 같은 목적이지만 inline 형태 -->
+    <!-- <span>NAVIGATION</span> -->
+    <!-- 나란히 놓기 위해 grid 활용 -->
+    <!-- 두개의 태그를 감싸는 부모태그 -->
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+    </div>
+  </body>
+<html>
